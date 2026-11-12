@@ -79,6 +79,7 @@ A proposal that is declined still gets an answer explaining why, and it can come
 npm ci
 npm test                         # specs, data schemas and golden profiles
 npm run lint
+npm run lint:md                  # links, anchors and structure of the Markdown docs
 npm run typecheck
 npm run build                    # the package as it is published, in dist/
 npm run golden                   # rewrite golden/results.json

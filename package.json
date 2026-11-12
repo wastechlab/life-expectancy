@@ -38,6 +38,7 @@
     "build": "npm run build-data && tsc -p tsconfig.build.json",
     "typecheck": "npm run build-data && tsc -p tsconfig.json",
     "lint": "eslint .",
+    "lint:md": "wastech-mdlint lint .",
     "test": "npm run build-data && vitest run",
     "golden": "npm run build-data && tsx scripts/golden.ts",
     "check-ids": "tsx scripts/check-ids.ts",
@@ -47,6 +48,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@types/node": "^24.19.2",
+    "@wastech-mdlint/cli": "^0.2.2",
     "ajv": "^8.20.0",
     "eslint": "^10.14.0",
     "globals": "^17.14.0",

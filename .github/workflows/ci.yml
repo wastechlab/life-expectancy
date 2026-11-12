@@ -25,6 +25,9 @@ jobs:
       - run: npm ci
       - run: npm run typecheck
       - run: npm run lint
+      # Broken links and anchors between the docs fail the build: contributors read the method and the rules
+      # through those links.
+      - run: npm run lint:md
       # The specs include the JSON schemas of the data and the golden profiles: a change that moves an estimate
       # fails here until golden/results.json is regenerated and committed with it.
       - run: npm test
