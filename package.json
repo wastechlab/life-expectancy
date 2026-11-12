@@ -39,7 +39,7 @@
     "typecheck": "npm run build-data && tsc -p tsconfig.json",
     "lint": "eslint .",
     "test": "npm run build-data && vitest run",
-    "golden": "tsx scripts/golden.ts",
+    "golden": "npm run build-data && tsx scripts/golden.ts",
     "check-ids": "tsx scripts/check-ids.ts",
     "build-countries": "tsx scripts/build-countries.ts",
     "prepack": "npm run build"
