@@ -1,0 +1,52 @@
+{
+  "$schema": "./node_modules/@wastech-mdlint/cli/schema.json",
+
+  // A scan skips dot-directories unless they are named, and these two are read every time: the pull request template by
+  // every contributor, the agent rules by every coding agent.
+  "include": ["./*.{md,mdx}", ".github/**/*.{md,mdx}", ".agents/**/*.{md,mdx}"],
+
+  "respectGitignore": true,
+
+  "rules": [
+    // Errors: contributors reach the method, the evidence bar and the licences through these links.
+    {"rule": "REF-001"},  // relative links resolve to a file
+    {"rule": "REF-002"},  // #anchors match a real heading
+    {"rule": "REF-003"},  // images resolve to a file
+
+    // Warnings: clean today, cheap to keep clean.
+    {"rule": "CTX-001"},  // no empty or placeholder-only sections
+    {"rule": "TBL-002"},  // no blank table cells
+
+    // Every document stays small enough to read in one sitting, so a file that grows is split by topic rather than
+    // allowed to sprawl. Budgets are in estimated tokens (characters / 4): `warn` sits just above today's largest file
+    // in each class and bites on growth, `error` is where the file must be split.
+    {
+      "rule": "SIZE-001",
+      "options": {
+        // README, METHODOLOGY, CONTRIBUTING and CHANGELOG; the largest today is METHODOLOGY.md at 1 845.
+        "tokens": {"warn": 2000, "error": 2500},
+        "overrides": [
+          // Shown in full on every pull request; 180 today.
+          {"pattern": ".github/PULL_REQUEST_TEMPLATE.md", "tokens": {"warn": 250, "error": 400}},
+          // Adopts the Contributor Covenant by reference rather than copying it; 198 today.
+          {"pattern": "CODE_OF_CONDUCT.md", "tokens": {"warn": 250, "error": 400}},
+          // An agent reads a rule before it touches the files the rule covers; the largest today is 1 432.
+          {"pattern": ".agents/**", "tokens": {"warn": 1600, "error": 2000}}
+        ]
+      }
+    },
+
+    // CLAUDE.md pulls AGENTS.md in eagerly, so every agent session pays for both before it starts; 109 today. The
+    // agent rules stay behind an ordinary link and are read on demand.
+    {
+      "rule": "LLM-001",
+      "options": {
+        "entrypoints": ["CLAUDE.md"],
+        "maxTokensPerEntrypoint": 300
+      }
+    }
+
+    // Left off on purpose: GRP-002 would flag CHANGELOG.md and the pull request template, which are found by
+    // convention rather than by a link, and CTX-002 would flag the template's checklist, which is unchecked by design.
+  ]
+}

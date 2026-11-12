@@ -7,3 +7,8 @@
 /.github/           @VladimirMakarevich
 /package.json       @VladimirMakarevich
 /package-lock.json  @VladimirMakarevich
+# What coding agents read and run: a change here steers or executes on the maintainer's machine.
+/.mcp.json          @VladimirMakarevich
+/.agents/           @VladimirMakarevich
+/AGENTS.md          @VladimirMakarevich
+/CLAUDE.md          @VladimirMakarevich

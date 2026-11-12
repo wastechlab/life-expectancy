@@ -97,6 +97,7 @@ the [Code of Conduct](CODE_OF_CONDUCT.md).
 npm ci
 npm test          # specs, including the data schemas and the golden profiles
 npm run lint
+npm run lint:md   # the Markdown docs
 npm run typecheck
 npm run golden    # rewrite golden/results.json after a change that moves the estimate
 ```

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "wastech-mdlint": {
+      "command": "npx",
+      "args": ["-y", "@wastech-mdlint/mcp-server@0.2.2"]
+    }
+  }
+}
