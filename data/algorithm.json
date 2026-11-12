@@ -279,11 +279,6 @@
           "weight": -2
         },
         {
-          "id": "Moderately High",
-          "label": "Moderately High",
-          "weight": -4
-        },
-        {
           "id": "High",
           "label": "High",
           "weight": -6
