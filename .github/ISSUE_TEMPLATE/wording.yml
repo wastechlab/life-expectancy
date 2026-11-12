@@ -1,0 +1,32 @@
+name: Wording
+description: A question, an answer, a description or a source reads badly or says something wrong.
+title: "Wording: "
+labels: ["wording"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Texts can be improved at any time without changing a single number. The final edit is part of the maintainer's review, so a rough suggestion is welcome.
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: The question, answer or page the text is on.
+      placeholder: Stress level, the description
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current text
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed text
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What is unclear, inaccurate or out of place in the current text.

@@ -1,0 +1,43 @@
+name: Weight change
+description: An answer's weight should be different, and a study shows why.
+title: "Weight: "
+labels: ["weight"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A weight moves real people's estimates, so a change rests on a systematic review, a meta-analysis or a large prospective cohort study. If you only have a smaller study or an article, open the issue anyway and say so; we can look for stronger evidence together.
+  - type: input
+    id: answer
+    attributes:
+      label: Question and answer
+      description: As they appear in the calculator.
+      placeholder: Sleep habits, "Very bad"
+    validations:
+      required: true
+  - type: input
+    id: weights
+    attributes:
+      label: Current and proposed weight
+      placeholder: -4 → -6
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: PubMed or DOI link to a systematic review, a meta-analysis or a large prospective cohort study.
+    validations:
+      required: true
+  - type: textarea
+    id: effect
+    attributes:
+      label: Size of the effect
+      description: What the source reports, such as a hazard ratio or a relative risk with its interval, and for which people.
+    validations:
+      required: true
+  - type: textarea
+    id: reasoning
+    attributes:
+      label: From the effect to the weight
+      description: How the reported effect leads to the weight you propose. A rough line of thought is enough.

@@ -1,0 +1,469 @@
+{
+  "now": "2026-11-10T12:00:00.000Z",
+  "profiles": [
+    {
+      "id": "neutral-male",
+      "note": "Every answer weighs zero: the result is the base alone",
+      "birthDate": "1990-06-15",
+      "sex": "male",
+      "countries": [
+        "PT"
+      ],
+      "ownExpectancy": 85,
+      "answers": {
+        "agingWellControl": "I feel neutral about aging",
+        "bmiControl": "28",
+        "stressControl": "Moderately Low",
+        "sleepControl": "It could be better",
+        "smokeControl": "Daily",
+        "cigarettesControl": "None",
+        "physicalControl": "Monthly",
+        "airControl": "Average",
+        "alcoholControl": "Once a Month",
+        "dietControl": "Average"
+      }
+    },
+    {
+      "id": "neutral-female",
+      "note": "Every answer weighs zero: the result is the base alone",
+      "birthDate": "1990-06-15",
+      "sex": "female",
+      "countries": [
+        "PT"
+      ],
+      "ownExpectancy": 85,
+      "answers": {
+        "agingWellControl": "I feel neutral about aging",
+        "bmiControl": "28",
+        "stressControl": "Moderately Low",
+        "sleepControl": "It could be better",
+        "smokeControl": "Daily",
+        "cigarettesControl": "None",
+        "physicalControl": "Monthly",
+        "airControl": "Average",
+        "alcoholControl": "Once a Month",
+        "dietControl": "Average"
+      }
+    },
+    {
+      "id": "neutral-undisclosed",
+      "note": "Sex not given: the country counts as the mean of its male and female figures",
+      "birthDate": "1990-06-15",
+      "sex": null,
+      "countries": [
+        "PT"
+      ],
+      "ownExpectancy": 85,
+      "answers": {
+        "agingWellControl": "I feel neutral about aging",
+        "bmiControl": "28",
+        "stressControl": "Moderately Low",
+        "sleepControl": "It could be better",
+        "smokeControl": "Daily",
+        "cigarettesControl": "None",
+        "physicalControl": "Monthly",
+        "airControl": "Average",
+        "alcoholControl": "Once a Month",
+        "dietControl": "Average"
+      }
+    },
+    {
+      "id": "countries-several-male",
+      "note": "Several countries: their male figures are averaged",
+      "birthDate": "1983-02-11",
+      "sex": "male",
+      "countries": [
+        "JP",
+        "US",
+        "RU"
+      ],
+      "ownExpectancy": 80,
+      "answers": {
+        "agingWellControl": "I'm cautiously optimistic",
+        "bmiControl": "27",
+        "stressControl": "Medium",
+        "sleepControl": "It varies",
+        "smokeControl": "Sometimes",
+        "cigarettesControl": null,
+        "physicalControl": "Weekly",
+        "airControl": "Moderately Good",
+        "alcoholControl": "2-4 Times per Month",
+        "dietControl": "Good"
+      }
+    },
+    {
+      "id": "countries-several-undisclosed",
+      "note": "Several countries with sex not given",
+      "birthDate": "1983-02-11",
+      "sex": null,
+      "countries": [
+        "HK",
+        "IN",
+        "NG"
+      ],
+      "ownExpectancy": 90,
+      "answers": {
+        "agingWellControl": "I'm cautiously optimistic",
+        "bmiControl": "27",
+        "stressControl": "Medium",
+        "sleepControl": "It varies",
+        "smokeControl": "Sometimes",
+        "cigarettesControl": null,
+        "physicalControl": "Weekly",
+        "airControl": "Moderately Good",
+        "alcoholControl": "2-4 Times per Month",
+        "dietControl": "Good"
+      }
+    },
+    {
+      "id": "no-countries",
+      "note": "No country chosen: the country part of the base counts as zero",
+      "birthDate": "1983-02-11",
+      "sex": "female",
+      "countries": [],
+      "ownExpectancy": 85,
+      "answers": {
+        "agingWellControl": "I'm cautiously optimistic",
+        "bmiControl": "27",
+        "stressControl": "Medium",
+        "sleepControl": "It varies",
+        "smokeControl": "Sometimes",
+        "cigarettesControl": null,
+        "physicalControl": "Weekly",
+        "airControl": "Moderately Good",
+        "alcoholControl": "2-4 Times per Month",
+        "dietControl": "Good"
+      }
+    },
+    {
+      "id": "best-answers",
+      "note": "The best option on every question",
+      "birthDate": "1985-03-20",
+      "sex": "female",
+      "countries": [
+        "DE"
+      ],
+      "ownExpectancy": 95,
+      "answers": {
+        "agingWellControl": "I'm very optimistic",
+        "bmiControl": "<25",
+        "stressControl": "Very Low",
+        "sleepControl": "Very good",
+        "smokeControl": "Rarely or never",
+        "cigarettesControl": null,
+        "physicalControl": "Daily",
+        "airControl": "Very Good (no smog)",
+        "alcoholControl": "Never",
+        "dietControl": "Excellent"
+      }
+    },
+    {
+      "id": "worst-answers",
+      "note": "The worst option on every question, daily smoking at three or more packs",
+      "birthDate": "1978-09-02",
+      "sex": "male",
+      "countries": [
+        "US"
+      ],
+      "ownExpectancy": 75,
+      "answers": {
+        "agingWellControl": "I'm very pessimistic",
+        "bmiControl": "44>",
+        "stressControl": "Very High",
+        "sleepControl": "Very bad",
+        "smokeControl": "Daily",
+        "cigarettesControl": "3 or more packs",
+        "physicalControl": "I do not",
+        "airControl": "Very Bad (lots of smog)",
+        "alcoholControl": "Several times a day",
+        "dietControl": "Terrible"
+      }
+    },
+    {
+      "id": "tobacco-daily-cigarettes",
+      "note": "Daily tobacco use: the cigarettes answer counts and the tobacco answer does not",
+      "birthDate": "1988-12-05",
+      "sex": "male",
+      "countries": [
+        "BY"
+      ],
+      "ownExpectancy": 78,
+      "answers": {
+        "agingWellControl": "I'm cautiously optimistic",
+        "bmiControl": "27",
+        "stressControl": "Medium",
+        "sleepControl": "It varies",
+        "smokeControl": "Daily",
+        "cigarettesControl": "1 cigarette to half a pack",
+        "physicalControl": "Weekly",
+        "airControl": "Moderately Good",
+        "alcoholControl": "2-4 Times per Month",
+        "dietControl": "Good"
+      }
+    },
+    {
+      "id": "tobacco-not-daily-ignores-cigarettes",
+      "note": "Tobacco use that is not daily: a leftover cigarettes answer is ignored",
+      "birthDate": "1988-12-05",
+      "sex": "male",
+      "countries": [
+        "BY"
+      ],
+      "ownExpectancy": 78,
+      "answers": {
+        "agingWellControl": "I'm cautiously optimistic",
+        "bmiControl": "27",
+        "stressControl": "Medium",
+        "sleepControl": "It varies",
+        "smokeControl": "Sometimes",
+        "cigarettesControl": "2 packs",
+        "physicalControl": "Weekly",
+        "airControl": "Moderately Good",
+        "alcoholControl": "2-4 Times per Month",
+        "dietControl": "Good"
+      }
+    },
+    {
+      "id": "tobacco-daily-unanswered",
+      "note": "Daily tobacco use with the cigarettes question still unanswered: no tobacco adjustment",
+      "birthDate": "1988-12-05",
+      "sex": "male",
+      "countries": [
+        "BY"
+      ],
+      "ownExpectancy": 78,
+      "answers": {
+        "agingWellControl": "I'm cautiously optimistic",
+        "bmiControl": "27",
+        "stressControl": "Medium",
+        "sleepControl": "It varies",
+        "smokeControl": "Daily",
+        "cigarettesControl": null,
+        "physicalControl": "Weekly",
+        "airControl": "Moderately Good",
+        "alcoholControl": "2-4 Times per Month",
+        "dietControl": "Good"
+      }
+    },
+    {
+      "id": "no-answers",
+      "note": "No question answered yet: the result is the base alone",
+      "birthDate": "1990-06-15",
+      "sex": "female",
+      "countries": [
+        "PT"
+      ],
+      "ownExpectancy": 85,
+      "answers": {
+        "agingWellControl": null,
+        "bmiControl": null,
+        "stressControl": null,
+        "sleepControl": null,
+        "smokeControl": null,
+        "cigarettesControl": null,
+        "physicalControl": null,
+        "airControl": null,
+        "alcoholControl": null,
+        "dietControl": null
+      }
+    },
+    {
+      "id": "unknown-answer-skipped",
+      "note": "An answer the algorithm does not know is skipped",
+      "birthDate": "1990-06-15",
+      "sex": "female",
+      "countries": [
+        "PT"
+      ],
+      "ownExpectancy": 85,
+      "answers": {
+        "agingWellControl": "I'm cautiously optimistic",
+        "bmiControl": "27",
+        "stressControl": "Medium",
+        "sleepControl": "It varies",
+        "smokeControl": "Sometimes",
+        "cigarettesControl": null,
+        "physicalControl": "Weekly",
+        "airControl": "Moderately Good",
+        "alcoholControl": "2-4 Times per Month",
+        "dietControl": "Outstanding"
+      }
+    },
+    {
+      "id": "ratio-60",
+      "note": "More than 95 years left: answers count at 60%",
+      "birthDate": "2025-08-01",
+      "sex": "female",
+      "countries": [
+        "HK"
+      ],
+      "ownExpectancy": 120,
+      "answers": {
+        "agingWellControl": "I'm cautiously optimistic",
+        "bmiControl": "27",
+        "stressControl": "Medium",
+        "sleepControl": "It varies",
+        "smokeControl": "Sometimes",
+        "cigarettesControl": null,
+        "physicalControl": "Weekly",
+        "airControl": "Moderately Good",
+        "alcoholControl": "2-4 Times per Month",
+        "dietControl": "Good"
+      }
+    },
+    {
+      "id": "ratio-65",
+      "note": "More than 90 years left: answers count at 65%",
+      "birthDate": "2021-08-01",
+      "sex": "female",
+      "countries": [
+        "HK"
+      ],
+      "ownExpectancy": 120,
+      "answers": {
+        "agingWellControl": "I'm cautiously optimistic",
+        "bmiControl": "27",
+        "stressControl": "Medium",
+        "sleepControl": "It varies",
+        "smokeControl": "Sometimes",
+        "cigarettesControl": null,
+        "physicalControl": "Weekly",
+        "airControl": "Moderately Good",
+        "alcoholControl": "2-4 Times per Month",
+        "dietControl": "Good"
+      }
+    },
+    {
+      "id": "ratio-75",
+      "note": "More than 85 years left: answers count at 75%",
+      "birthDate": "2016-08-01",
+      "sex": "female",
+      "countries": [
+        "HK"
+      ],
+      "ownExpectancy": 120,
+      "answers": {
+        "agingWellControl": "I'm cautiously optimistic",
+        "bmiControl": "27",
+        "stressControl": "Medium",
+        "sleepControl": "It varies",
+        "smokeControl": "Sometimes",
+        "cigarettesControl": null,
+        "physicalControl": "Weekly",
+        "airControl": "Moderately Good",
+        "alcoholControl": "2-4 Times per Month",
+        "dietControl": "Good"
+      }
+    },
+    {
+      "id": "ratio-85",
+      "note": "More than 80 years left: answers count at 85%",
+      "birthDate": "2011-08-01",
+      "sex": "female",
+      "countries": [
+        "HK"
+      ],
+      "ownExpectancy": 120,
+      "answers": {
+        "agingWellControl": "I'm cautiously optimistic",
+        "bmiControl": "27",
+        "stressControl": "Medium",
+        "sleepControl": "It varies",
+        "smokeControl": "Sometimes",
+        "cigarettesControl": null,
+        "physicalControl": "Weekly",
+        "airControl": "Moderately Good",
+        "alcoholControl": "2-4 Times per Month",
+        "dietControl": "Good"
+      }
+    },
+    {
+      "id": "born-feb-29",
+      "note": "Born on 29 February: age counts in days like any other birth date",
+      "birthDate": "1996-02-29",
+      "sex": "female",
+      "countries": [
+        "JP"
+      ],
+      "ownExpectancy": 88,
+      "answers": {
+        "agingWellControl": "I'm cautiously optimistic",
+        "bmiControl": "27",
+        "stressControl": "Medium",
+        "sleepControl": "It varies",
+        "smokeControl": "Sometimes",
+        "cigarettesControl": null,
+        "physicalControl": "Weekly",
+        "airControl": "Moderately Good",
+        "alcoholControl": "2-4 Times per Month",
+        "dietControl": "Good"
+      }
+    },
+    {
+      "id": "over-80",
+      "note": "Older than 80: the base is current age plus 5, countries and own value are not used",
+      "birthDate": "1942-04-01",
+      "sex": "male",
+      "countries": [
+        "CF"
+      ],
+      "ownExpectancy": 60,
+      "answers": {
+        "agingWellControl": "I'm cautiously optimistic",
+        "bmiControl": "27",
+        "stressControl": "Medium",
+        "sleepControl": "It varies",
+        "smokeControl": "Sometimes",
+        "cigarettesControl": null,
+        "physicalControl": "Weekly",
+        "airControl": "Moderately Good",
+        "alcoholControl": "2-4 Times per Month",
+        "dietControl": "Good"
+      }
+    },
+    {
+      "id": "base-exhausted",
+      "note": "The base is below the current age",
+      "birthDate": "1950-01-10",
+      "sex": "male",
+      "countries": [
+        "TD"
+      ],
+      "ownExpectancy": 1,
+      "answers": {
+        "agingWellControl": "I'm cautiously optimistic",
+        "bmiControl": "27",
+        "stressControl": "Medium",
+        "sleepControl": "It varies",
+        "smokeControl": "Sometimes",
+        "cigarettesControl": null,
+        "physicalControl": "Weekly",
+        "airControl": "Moderately Good",
+        "alcoholControl": "2-4 Times per Month",
+        "dietControl": "Good"
+      }
+    },
+    {
+      "id": "range-not-future",
+      "note": "The base is just above the current age, so the lower end of the range is already past",
+      "birthDate": "1952-02-01",
+      "sex": "male",
+      "countries": [
+        "RU"
+      ],
+      "ownExpectancy": 75,
+      "answers": {
+        "agingWellControl": "I'm cautiously optimistic",
+        "bmiControl": "27",
+        "stressControl": "Medium",
+        "sleepControl": "It varies",
+        "smokeControl": "Sometimes",
+        "cigarettesControl": null,
+        "physicalControl": "Weekly",
+        "airControl": "Moderately Good",
+        "alcoholControl": "2-4 Times per Month",
+        "dietControl": "Good"
+      }
+    }
+  ]
+}

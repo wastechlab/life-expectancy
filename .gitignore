@@ -1,0 +1,7 @@
+node_modules/
+dist/
+src/generated/
+coverage/
+*.tgz
+# The WPP source file is large and is not part of the repository; build-countries checks its checksum.
+WPP2024_*.csv*

@@ -1,0 +1,16 @@
+{
+  // The package itself. Node module resolution keeps the emitted imports loadable by Node as they are,
+  // and with no DOM library and no Node types, code that reaches for either does not compile.
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": [],
+    "noEmit": false,
+    "declaration": true,
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": ["src"],
+  "exclude": ["src/**/*.spec.ts"]
+}

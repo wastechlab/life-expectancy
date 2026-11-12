@@ -1,0 +1,45 @@
+Data and texts of @wastechlab/life-expectancy
+
+The code of this package is licensed under the MIT License (see LICENSE). The data
+and texts listed below are licensed separately.
+
+
+1. The algorithm and the documentation
+
+   data/algorithm.json (questions, options, weights, descriptions, overviews and
+   the selection of sources), data/country-names.json, METHODOLOGY.md, README.md,
+   CONTRIBUTING.md and CHANGELOG.md.
+
+   Copyright (c) 2026 Wastech Lab.
+   Licensed under the Creative Commons Attribution 4.0 International License
+   (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+   Attribution: "Life expectancy calculator by Wastech Lab,
+   @wastechlab/life-expectancy, CC BY 4.0."
+
+   The studies and fact sheets listed under "sources" belong to their authors and
+   publishers; the package only cites them.
+
+
+2. The country table
+
+   data/countries.json is adapted from:
+
+   United Nations, Department of Economic and Social Affairs, Population Division
+   (2024). World Population Prospects 2024, Online Edition. Demographic Indicators,
+   medium variant (WPP2024_Demographic_Indicators_Medium.csv.gz).
+   https://population.un.org/wpp/
+
+   The source data are licensed under the Creative Commons Attribution 3.0 IGO
+   License (CC BY 3.0 IGO): https://creativecommons.org/licenses/by/3.0/igo/
+
+   Changes made to the source data:
+   - only countries and areas with an ISO2 code are kept;
+   - only life expectancy at birth (LEx, LExMale, LExFemale) for 2023 is kept;
+   - the values are rounded to two decimal places;
+   - the location names are replaced with the short English names in
+     data/country-names.json.
+
+   The adapted table is available under CC BY 4.0 with the attribution above to
+   the United Nations kept. The United Nations does not endorse this package or
+   the way the data are used in it.

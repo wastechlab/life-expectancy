@@ -1,0 +1,753 @@
+{
+  "tobacco": {
+    "questionId": "smokeControl",
+    "dailyOptionId": "Daily",
+    "cigarettesQuestionId": "cigarettesControl"
+  },
+  "questions": [
+    {
+      "id": "agingWellControl",
+      "label": "Your outlook on aging",
+      "question": "Do you feel hopeful or uneasy about growing older?",
+      "required": true,
+      "description": "How you feel about getting older colours more than your mood. The way you expect these years to go tends to shape the habits and choices you make on the way there.",
+      "overview": [
+        {
+          "title": "Why we ask",
+          "body": "Research keeps finding that how you expect aging to go has a real hand in how it actually goes. Someone who looks ahead with some hope tends to look after themselves differently than someone quietly bracing for decline."
+        },
+        {
+          "title": "Why it matters",
+          "body": "A hopeful view of aging has been tied to lower stress and, in more than one long study, to more years lived. A darker one tends to feed stress and slowly pull people away from the things that keep them well."
+        },
+        {
+          "title": "How it shows up",
+          "body": "This outlook has a way of surfacing in ordinary choices, in whether you keep learning something new or let your own momentum quietly slip. Expecting good years tends to make you more willing to invest in them."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Longevity increased by positive self-perceptions of aging",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12150226/"
+        },
+        {
+          "title": "Survival advantage mechanism: Inflammation as a mediator of positive self-perceptions of aging on longevity",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27032428/"
+        },
+        {
+          "title": "Optimism is associated with exceptional longevity in 2 epidemiologic cohorts of men and women",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31451635/"
+        },
+        {
+          "title": "Longitudinal effects of subjective aging on health and longevity: an updated meta-analysis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36972091/"
+        }
+      ],
+      "options": [
+        {
+          "id": "I'm very optimistic",
+          "label": "I'm very optimistic",
+          "weight": 8
+        },
+        {
+          "id": "I feel I'm aging well",
+          "label": "I feel I'm aging well",
+          "weight": 6
+        },
+        {
+          "id": "I'm cautiously optimistic",
+          "label": "I'm cautiously optimistic",
+          "weight": 4
+        },
+        {
+          "id": "I feel neutral about aging",
+          "label": "I feel neutral about aging",
+          "weight": 0
+        },
+        {
+          "id": "I'm somewhat pessimistic",
+          "label": "I'm somewhat pessimistic",
+          "weight": -4
+        },
+        {
+          "id": "I'm dreading my older years",
+          "label": "I'm dreading my older years",
+          "weight": -6
+        },
+        {
+          "id": "I'm very pessimistic",
+          "label": "I'm very pessimistic",
+          "weight": -8
+        }
+      ]
+    },
+    {
+      "id": "bmiControl",
+      "label": "Select BMI",
+      "question": "What is your BMI (Body Mass Index)?",
+      "required": true,
+      "description": "BMI is a rough number that pairs your height with your weight to hint at how much of you is body fat. It's a blunt instrument, but a fair place to start when you want to see where your weight sits for your height.",
+      "overview": [
+        {
+          "title": "Why we ask",
+          "body": "Your BMI gives us a quick read on where your weight falls for your height, and that stays one of the more reliable early clues to weight-related health risk."
+        },
+        {
+          "title": "Why it matters",
+          "body": "Keeping your weight in a healthy range lowers the odds of the big chronic illnesses, and it quietly shows up in how easily you move through an ordinary day."
+        },
+        {
+          "title": "How it shows up",
+          "body": "Weight that sits well outside the healthy range tends to make itself felt in your stamina, and in how often the small health troubles crop up over the years."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Body-mass index and mortality among 1.46 million white adults",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21121834/"
+        },
+        {
+          "title": "Cause-specific excess deaths associated with underweight, overweight, and obesity",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17986696/"
+        },
+        {
+          "title": "Body-mass index and all-cause mortality: individual-participant-data meta-analysis of 239 prospective studies in four continents",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27423262/"
+        }
+      ],
+      "options": [
+        {
+          "id": "<25",
+          "label": "<25",
+          "weight": 2
+        },
+        {
+          "id": "25",
+          "label": "25",
+          "weight": 1
+        },
+        {
+          "id": "26",
+          "label": "26",
+          "weight": 1
+        },
+        {
+          "id": "27",
+          "label": "27",
+          "weight": 1
+        },
+        {
+          "id": "28",
+          "label": "28",
+          "weight": 0
+        },
+        {
+          "id": "29",
+          "label": "29",
+          "weight": 0
+        },
+        {
+          "id": "30",
+          "label": "30",
+          "weight": -1
+        },
+        {
+          "id": "31",
+          "label": "31",
+          "weight": -1
+        },
+        {
+          "id": "32",
+          "label": "32",
+          "weight": -2
+        },
+        {
+          "id": "33",
+          "label": "33",
+          "weight": -2
+        },
+        {
+          "id": "34",
+          "label": "34",
+          "weight": -3
+        },
+        {
+          "id": "35",
+          "label": "35",
+          "weight": -3
+        },
+        {
+          "id": "36",
+          "label": "36",
+          "weight": -4
+        },
+        {
+          "id": "37",
+          "label": "37",
+          "weight": -4
+        },
+        {
+          "id": "38",
+          "label": "38",
+          "weight": -5
+        },
+        {
+          "id": "39",
+          "label": "39",
+          "weight": -5
+        },
+        {
+          "id": "40",
+          "label": "40",
+          "weight": -6
+        },
+        {
+          "id": "41",
+          "label": "41",
+          "weight": -6
+        },
+        {
+          "id": "42",
+          "label": "42",
+          "weight": -7
+        },
+        {
+          "id": "43",
+          "label": "43",
+          "weight": -7
+        },
+        {
+          "id": "44>",
+          "label": "44>",
+          "weight": -8
+        }
+      ]
+    },
+    {
+      "id": "stressControl",
+      "label": "Stress level",
+      "question": "Over the past year, how much stress have you been carrying?",
+      "required": true,
+      "description": "Stress is how your body and mind brace against pressure. A short burst is harmless enough, but when it never lets up it wears on both, which is why it's worth taking an honest measure of.",
+      "overview": [
+        {
+          "title": "Why we ask",
+          "body": "Stress that never eases raises the odds of serious trouble down the line, from the heart to the mind. Knowing where you stand is the first honest step toward easing it."
+        },
+        {
+          "title": "Why it matters",
+          "body": "So much lifestyle illness traces back to stress that leaving it unnamed hides a real risk. Sizing it up plainly is what tells you whether it's time to do something about it."
+        },
+        {
+          "title": "How it shows up",
+          "body": "Stress rarely stays put. Left alone, it seeps into your sleep and your patience and quietly drains what you have left for the people around you, until one day it tips over into burnout."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Does the perception that stress affects health matter? The association with health and mortality",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22201278/"
+        },
+        {
+          "title": "Stress and cardiovascular disease: an update",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38698183/"
+        },
+        {
+          "title": "Association between psychological distress and mortality: individual participant pooled analysis of 10 prospective cohort studies",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22849956/"
+        }
+      ],
+      "options": [
+        {
+          "id": "Very Low",
+          "label": "Very Low",
+          "weight": 4
+        },
+        {
+          "id": "Low",
+          "label": "Low",
+          "weight": 2
+        },
+        {
+          "id": "Moderately Low",
+          "label": "Moderately Low",
+          "weight": 0
+        },
+        {
+          "id": "Medium",
+          "label": "Medium",
+          "weight": -2
+        },
+        {
+          "id": "Moderately High",
+          "label": "Moderately High",
+          "weight": -4
+        },
+        {
+          "id": "High",
+          "label": "High",
+          "weight": -6
+        },
+        {
+          "id": "Very High",
+          "label": "Very High",
+          "weight": -10
+        }
+      ]
+    },
+    {
+      "id": "sleepControl",
+      "label": "Sleep habits",
+      "question": "How's your sleep these days?",
+      "required": true,
+      "description": "Sleep quietly sets the tone for everything else. Rest well and the day has a different texture; sleep badly and you feel it in your body and your mood alike.",
+      "overview": [
+        {
+          "title": "Why we ask",
+          "body": "Good sleep does quiet repair work all night, steadying your mood and handing over the energy the next day runs on. That's reason enough to ask about it plainly."
+        },
+        {
+          "title": "Why it matters",
+          "body": "Enough sleep, night after night, is one of the strongest things you can do for your health. It steadies your immune system and your stress, and over the long run it holds back the illnesses that shorten lives."
+        },
+        {
+          "title": "How it shows up",
+          "body": "A few rough nights are hard to hide. By afternoon your focus has thinned and your patience with it, and the small mistakes start to add up. Sleep well and the very same day feels far easier to carry."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Sleep duration and all-cause mortality: a systematic review and meta-analysis of prospective studies",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20469800/"
+        },
+        {
+          "title": "Sleep and physical activity in relation to all-cause, cardiovascular disease and cancer mortality risk",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34187783/"
+        },
+        {
+          "title": "Sleep Deprivation and Deficiency - NHLBI",
+          "url": "https://www.nhlbi.nih.gov/health/sleep-deprivation"
+        }
+      ],
+      "options": [
+        {
+          "id": "Very good",
+          "label": "Very good",
+          "weight": 4
+        },
+        {
+          "id": "Good",
+          "label": "Good",
+          "weight": 2
+        },
+        {
+          "id": "It could be better",
+          "label": "It could be better",
+          "weight": 0
+        },
+        {
+          "id": "It varies",
+          "label": "It varies",
+          "weight": -2
+        },
+        {
+          "id": "Very bad",
+          "label": "Very bad",
+          "weight": -4
+        }
+      ]
+    },
+    {
+      "id": "smokeControl",
+      "label": "Tobacco use",
+      "question": "How often do you use tobacco, in any form?",
+      "required": true,
+      "description": "How often tobacco is part of your days says a lot about the strain on your lungs and heart, and on your health more widely.",
+      "overview": [
+        {
+          "title": "Why we ask",
+          "body": "Tobacco is still the leading cause of illness people could have avoided. Knowing how often it's in your day tells us how much harm is quietly accumulating."
+        },
+        {
+          "title": "Why it matters",
+          "body": "How much you use and how long you have moves the numbers more than almost anything else here. The clearer that picture, the more honest the estimate we can hand back."
+        },
+        {
+          "title": "How it shows up",
+          "body": "Regular use tends to make itself known well before any diagnosis, in breath that comes shorter and energy that fades sooner than it used to."
+        }
+      ],
+      "sources": [
+        {
+          "title": "The Health Consequences of Smoking: 50 Years of Progress (Surgeon General’s Report)",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK179276/"
+        },
+        {
+          "title": "Tobacco - WHO fact sheet",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/tobacco"
+        },
+        {
+          "title": "21st-century hazards of smoking and benefits of cessation in the United States",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23343063/"
+        }
+      ],
+      "options": [
+        {
+          "id": "Rarely or never",
+          "label": "Rarely or never",
+          "weight": 2
+        },
+        {
+          "id": "Sometimes",
+          "label": "Sometimes",
+          "weight": -2
+        },
+        {
+          "id": "Not daily, but often",
+          "label": "Not daily, but often",
+          "weight": -3
+        },
+        {
+          "id": "Daily",
+          "label": "Daily",
+          "weight": null
+        }
+      ]
+    },
+    {
+      "id": "cigarettesControl",
+      "label": "Cigarettes a day",
+      "question": "How many cigarettes do you smoke a day?",
+      "required": false,
+      "description": "The daily count is one of the most direct measures we have of how tobacco is shaping your health and the years ahead.",
+      "overview": [
+        {
+          "title": "Why we ask",
+          "body": "Of all the things that shorten a life and can still be changed, smoking sits near the top. The daily number tells us how heavily it's weighing on your lungs and heart right now."
+        },
+        {
+          "title": "Why it matters",
+          "body": "Every extra cigarette a day nudges the risk of the illnesses that end lives early a little higher. Seeing that number plainly is sometimes what tips someone toward cutting back."
+        },
+        {
+          "title": "How it shows up",
+          "body": "Beyond the long-term risk, a heavy daily habit is felt in the moment, in stamina that runs low and a mind that fogs a little as oxygen gets crowded out."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cigarette smoking reduction and health risks: a systematic review and meta-analysis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32803250/"
+        },
+        {
+          "title": "Association of long-term, low-intensity smoking with all-cause and cause-specific mortality in the National Institutes of Health-AARP Diet and Health Study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27918784/"
+        },
+        {
+          "title": "The Health Consequences of Smoking: 50 Years of Progress",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK179276/"
+        }
+      ],
+      "options": [
+        {
+          "id": "None",
+          "label": "None",
+          "weight": 0
+        },
+        {
+          "id": "1 cigarette to half a pack",
+          "label": "1 cigarette to half a pack",
+          "weight": -3
+        },
+        {
+          "id": "From half a pack to 1 pack",
+          "label": "From half a pack to 1 pack",
+          "weight": -5
+        },
+        {
+          "id": "1 and a half packs",
+          "label": "1 and a half packs",
+          "weight": -7
+        },
+        {
+          "id": "2 packs",
+          "label": "2 packs",
+          "weight": -10
+        },
+        {
+          "id": "3 or more packs",
+          "label": "3 or more packs",
+          "weight": -14
+        }
+      ]
+    },
+    {
+      "id": "physicalControl",
+      "label": "Physical exercise",
+      "question": "How often do you get real exercise?",
+      "required": true,
+      "description": "Exercise is anything that lifts your heart rate and puts your muscles to work. Kept up regularly, few things do more for your body and your mood at once.",
+      "overview": [
+        {
+          "title": "Why we ask",
+          "body": "How regularly you move is one of the clearest signals of how the coming years are likely to go. Consistency matters here more than intensity, so it's the frequency we ask about."
+        },
+        {
+          "title": "Why it matters",
+          "body": "Regular movement keeps your weight in check and holds off the illnesses that shorten lives, and it quietly takes the edge off stress while handing you better sleep in return."
+        },
+        {
+          "title": "How it shows up",
+          "body": "The payoff turns up in ordinary days, in energy that holds steadier and a head that stays clearer than it would if you sat still."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35247352/"
+        },
+        {
+          "title": "Effectiveness of physical activity interventions for improving depression, anxiety and distress: an overview of systematic reviews",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36796860/"
+        },
+        {
+          "title": "Physical activity - WHO fact sheet",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+        }
+      ],
+      "options": [
+        {
+          "id": "Daily",
+          "label": "Daily",
+          "weight": 5
+        },
+        {
+          "id": "Weekly",
+          "label": "Weekly",
+          "weight": 2
+        },
+        {
+          "id": "Monthly",
+          "label": "Monthly",
+          "weight": 0
+        },
+        {
+          "id": "I do not",
+          "label": "I do not",
+          "weight": -3
+        }
+      ]
+    },
+    {
+      "id": "airControl",
+      "label": "Air quality",
+      "question": "How clean is the air where you live?",
+      "required": true,
+      "description": "The air you breathe all day, every day, is easy to stop noticing. How clean it is where you live quietly adds up over a lifetime.",
+      "overview": [
+        {
+          "title": "Why we ask",
+          "body": "Where you live shapes your health as surely as how you live. Breathe heavy pollution year after year and the risk of trouble climbs, whatever else you're doing right."
+        },
+        {
+          "title": "Why it matters",
+          "body": "Steady exposure to dirty air starts and worsens the kind of illness that shortens lives, working on your lungs and heart a little at a time. Accounting for it brings the estimate closer to your real world."
+        },
+        {
+          "title": "How it shows up",
+          "body": "You may feel it before you can name it, in a cough that lingers or stamina that isn't quite what it should be on the worst days."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ambient particulate matter air pollution exposure and mortality in the NIH-AARP Diet and Health Cohort",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26370657/"
+        },
+        {
+          "title": "Ambient (outdoor) air quality and health - WHO fact sheet",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health"
+        }
+      ],
+      "options": [
+        {
+          "id": "Very Good (no smog)",
+          "label": "Very Good (no smog)",
+          "weight": 2
+        },
+        {
+          "id": "Good",
+          "label": "Good",
+          "weight": 1
+        },
+        {
+          "id": "Moderately Good",
+          "label": "Moderately Good",
+          "weight": 0.5
+        },
+        {
+          "id": "Average",
+          "label": "Average",
+          "weight": 0
+        },
+        {
+          "id": "Moderately Bad",
+          "label": "Moderately Bad",
+          "weight": -2
+        },
+        {
+          "id": "Bad",
+          "label": "Bad",
+          "weight": -3
+        },
+        {
+          "id": "Very Bad (lots of smog)",
+          "label": "Very Bad (lots of smog)",
+          "weight": -5
+        }
+      ]
+    },
+    {
+      "id": "alcoholControl",
+      "label": "Alcohol consumption",
+      "question": "How much do you usually drink?",
+      "required": true,
+      "description": "How often and how much you drink is worth looking at honestly. The pattern says more about the effect on your health than any single night does.",
+      "overview": [
+        {
+          "title": "Why we ask",
+          "body": "Drinking works on your health and your years in ways that are easy to underestimate. A clear sense of how much and how often lets us weigh it fairly rather than guess."
+        },
+        {
+          "title": "Why it matters",
+          "body": "Once drinking moves past the occasional glass, the cost starts to show, in the body first and before long in your mood and the people around you. The heavier the pattern, the steeper that cost climbs."
+        },
+        {
+          "title": "How it shows up",
+          "body": "Even short of heavy use, alcohol dulls the edges of a day, softening memory and focus in ways you don't always notice until they've quietly added up."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Risk thresholds for alcohol consumption: combined analysis of individual-participant data for 599 912 current drinkers in 83 prospective studies",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29676281/"
+        },
+        {
+          "title": "Association between daily alcohol intake and risk of all-cause mortality: a systematic review and meta-analyses",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37000449/"
+        },
+        {
+          "title": "Global status report on alcohol and health and treatment of substance use disorders 2024 - WHO",
+          "url": "https://www.who.int/publications/i/item/9789240096745"
+        }
+      ],
+      "options": [
+        {
+          "id": "Never",
+          "label": "Never",
+          "weight": 2
+        },
+        {
+          "id": "Once a Month",
+          "label": "Once a Month",
+          "weight": 0
+        },
+        {
+          "id": "2-4 Times per Month",
+          "label": "2-4 Times per Month",
+          "weight": -1
+        },
+        {
+          "id": "2 Times a Week",
+          "label": "2 Times a Week",
+          "weight": -2
+        },
+        {
+          "id": "Daily",
+          "label": "Daily",
+          "weight": -5
+        },
+        {
+          "id": "Several times a day",
+          "label": "Several times a day",
+          "weight": -10
+        }
+      ]
+    },
+    {
+      "id": "dietControl",
+      "label": "Diet quality",
+      "question": "How well do you eat, honestly?",
+      "required": true,
+      "description": "This is a chance to look plainly at how you eat most days. What ends up on your plate feeds your energy now and your health for years after.",
+      "overview": [
+        {
+          "title": "Why we ask",
+          "body": "How you eat, day in and day out, is one of the few levers over your health you actually hold. Naming where it stands is the first step toward moving it."
+        },
+        {
+          "title": "Why it matters",
+          "body": "Good food does more than keep your body running. It steadies your mood and your thinking, and over the years it holds back the illnesses that quietly shorten lives."
+        },
+        {
+          "title": "How it shows up",
+          "body": "Eat well for long enough and you feel it in the small things, in steadier energy and a clearer head through the afternoon. That same habit is quietly guarding your weight and your defences underneath."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Healthy diet - WHO fact sheet",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+        },
+        {
+          "title": "Health effects of dietary risks in 195 countries, 1990-2017: a systematic analysis for the Global Burden of Disease Study 2017",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30954305/"
+        },
+        {
+          "title": "Long-term impact of Mediterranean diet on cardiovascular disease prevention: a systematic review and meta-analysis of randomized controlled trials",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38431146/"
+        },
+        {
+          "title": "Combined lifestyle factors, all-cause mortality and cardiovascular disease: a systematic review and meta-analysis of prospective cohort studies",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32892156/"
+        }
+      ],
+      "options": [
+        {
+          "id": "Excellent",
+          "label": "Excellent",
+          "weight": 3
+        },
+        {
+          "id": "Good",
+          "label": "Good",
+          "weight": 2
+        },
+        {
+          "id": "Moderately Good",
+          "label": "Moderately Good",
+          "weight": 1
+        },
+        {
+          "id": "Average",
+          "label": "Average",
+          "weight": 0
+        },
+        {
+          "id": "Moderately Bad",
+          "label": "Moderately Bad",
+          "weight": -1
+        },
+        {
+          "id": "Bad",
+          "label": "Bad",
+          "weight": -3
+        },
+        {
+          "id": "Terrible",
+          "label": "Terrible",
+          "weight": -5
+        }
+      ]
+    }
+  ]
+}

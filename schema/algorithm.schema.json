@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "algorithm.schema.json",
+  "title": "Life expectancy algorithm",
+  "description": "Questions, their answer options with weights, and the rule that links the tobacco question to the cigarettes question.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["tobacco", "questions"],
+  "properties": {
+    "tobacco": {
+      "description": "Choosing dailyOptionId on questionId replaces the tobacco answer with the cigarettes answer.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["questionId", "dailyOptionId", "cigarettesQuestionId"],
+      "properties": {
+        "questionId": { "$ref": "#/definitions/id" },
+        "dailyOptionId": { "$ref": "#/definitions/id" },
+        "cigarettesQuestionId": { "$ref": "#/definitions/id" }
+      }
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/definitions/question" }
+    }
+  },
+  "definitions": {
+    "id": {
+      "description": "Stored with saved answers, so it never changes once released.",
+      "type": "string",
+      "minLength": 1
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "question": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "question", "required", "description", "overview", "sources", "options"],
+      "properties": {
+        "id": { "$ref": "#/definitions/id" },
+        "label": { "$ref": "#/definitions/text" },
+        "question": { "$ref": "#/definitions/text" },
+        "required": { "type": "boolean" },
+        "description": { "$ref": "#/definitions/text" },
+        "overview": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["title", "body"],
+            "properties": {
+              "title": { "$ref": "#/definitions/text" },
+              "body": { "$ref": "#/definitions/text" }
+            }
+          }
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["title", "url"],
+            "properties": {
+              "title": { "$ref": "#/definitions/text" },
+              "url": { "type": "string", "pattern": "^https://\\S+$" }
+            }
+          }
+        },
+        "options": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/definitions/option" }
+        }
+      }
+    },
+    "option": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "weight"],
+      "properties": {
+        "id": { "$ref": "#/definitions/id" },
+        "label": { "$ref": "#/definitions/text" },
+        "weight": {
+          "description": "Percentage shift of the remaining years; null only on the option that hands the answer over to another question.",
+          "type": ["number", "null"]
+        }
+      }
+    }
+  }
+}

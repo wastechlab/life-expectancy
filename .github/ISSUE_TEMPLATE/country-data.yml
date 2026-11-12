@@ -1,0 +1,33 @@
+name: Country data
+description: A country's figures or name in the table look wrong or out of date.
+title: "Country: "
+labels: ["country data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The figures come from UN World Population Prospects 2024 and are rebuilt from the published file, so a single country is not edited by hand. A newer edition, an error in the build, or a better name are all good reasons to open this.
+  - type: input
+    id: country
+    attributes:
+      label: Country or area
+      placeholder: Portugal (PT)
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What looks wrong
+      options:
+        - The figures
+        - The name
+        - The country is missing
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What you expected to see and where it comes from, with a link to the source.
+    validations:
+      required: true

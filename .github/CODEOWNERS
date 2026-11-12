@@ -1,0 +1,9 @@
+# Everything that decides what the package computes, ships or runs in CI needs the maintainer's approval.
+/data/              @VladimirMakarevich
+/src/               @VladimirMakarevich
+/schema/            @VladimirMakarevich
+/scripts/           @VladimirMakarevich
+/golden/            @VladimirMakarevich
+/.github/           @VladimirMakarevich
+/package.json       @VladimirMakarevich
+/package-lock.json  @VladimirMakarevich

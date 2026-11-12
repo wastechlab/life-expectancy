@@ -1,0 +1,42 @@
+name: New factor
+description: A question or an answer the calculator does not have yet.
+title: "Factor: "
+labels: ["new factor"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A new factor meets the same bar as a weight change: a systematic review, a meta-analysis or a large prospective cohort study. It also has to be something a person can answer about themselves without tests or a doctor.
+  - type: input
+    id: factor
+    attributes:
+      label: Factor
+      placeholder: Social connection
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question and answers
+      description: How the question could be asked, and the answers a person would choose from.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: PubMed or DOI link to a systematic review, a meta-analysis or a large prospective cohort study.
+    validations:
+      required: true
+  - type: textarea
+    id: effect
+    attributes:
+      label: Size of the effect
+      description: What the source reports for each answer, such as a hazard ratio or a relative risk with its interval, and for which people.
+    validations:
+      required: true
+  - type: textarea
+    id: overlap
+    attributes:
+      label: Overlap with existing questions
+      description: Whether the factor is partly measured already, for example by exercise or BMI.

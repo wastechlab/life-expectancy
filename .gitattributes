@@ -1,0 +1,3 @@
+# The data files are rebuilt by scripts that write LF; keeping LF everywhere keeps rebuilds byte-identical on any OS.
+* text=auto eol=lf
+*.png binary

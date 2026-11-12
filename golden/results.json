@@ -1,0 +1,141 @@
+{
+  "neutral-male": {
+    "range": {
+      "minAge": 81.068,
+      "maxAge": 85.22533333333332,
+      "currentAge": 36.40657084188912
+    }
+  },
+  "neutral-female": {
+    "range": {
+      "minAge": 82.914,
+      "maxAge": 87.16600000000001,
+      "currentAge": 36.40657084188912
+    }
+  },
+  "neutral-undisclosed": {
+    "range": {
+      "minAge": 81.991,
+      "maxAge": 86.19566666666667,
+      "currentAge": 36.40657084188912
+    }
+  },
+  "countries-several-male": {
+    "range": {
+      "minAge": 79.10369948271277,
+      "maxAge": 83.16029945618523,
+      "currentAge": 43.74674880219028
+    }
+  },
+  "countries-several-undisclosed": {
+    "range": {
+      "minAge": 80.88710021640593,
+      "maxAge": 85.03515663776007,
+      "currentAge": 43.74674880219028
+    }
+  },
+  "no-countries": {
+    "range": {
+      "minAge": 55.74125355091417,
+      "maxAge": 58.59977937403797,
+      "currentAge": 43.74674880219028
+    }
+  },
+  "best-answers": {
+    "range": {
+      "minAge": 104.94483435872064,
+      "maxAge": 110.32662073609094,
+      "currentAge": 41.644079397672826
+    }
+  },
+  "worst-answers": {
+    "range": {
+      "minAge": 59.16449729467828,
+      "maxAge": 62.19857407902075,
+      "currentAge": 48.19028062970568
+    }
+  },
+  "tobacco-daily-cigarettes": {
+    "range": {
+      "minAge": 76.18916534279462,
+      "maxAge": 80.0963020270405,
+      "currentAge": 37.931553730321696
+    }
+  },
+  "tobacco-not-daily-ignores-cigarettes": {
+    "range": {
+      "minAge": 76.71532487293327,
+      "maxAge": 80.64944409718625,
+      "currentAge": 37.931553730321696
+    }
+  },
+  "tobacco-daily-unanswered": {
+    "range": {
+      "minAge": 77.76764393321056,
+      "maxAge": 81.75572823747777,
+      "currentAge": 37.931553730321696
+    }
+  },
+  "no-answers": {
+    "range": {
+      "minAge": 82.914,
+      "maxAge": 87.16600000000001,
+      "currentAge": 36.40657084188912
+    }
+  },
+  "unknown-answer-skipped": {
+    "range": {
+      "minAge": 83.08197297538128,
+      "maxAge": 87.34258697411879,
+      "currentAge": 36.40657084188912
+    }
+  },
+  "ratio-60": {
+    "range": {
+      "minAge": 96.65334294715649,
+      "maxAge": 101.60992463675427,
+      "currentAge": 1.2772073921971252
+    }
+  },
+  "ratio-65": {
+    "range": {
+      "minAge": 96.70155552006953,
+      "maxAge": 101.66060964930388,
+      "currentAge": 5.277207392197125
+    }
+  },
+  "ratio-75": {
+    "range": {
+      "minAge": 96.82174736253796,
+      "maxAge": 101.78696517600144,
+      "currentAge": 10.276522929500342
+    }
+  },
+  "ratio-85": {
+    "range": {
+      "minAge": 96.91647692213775,
+      "maxAge": 101.88655266173456,
+      "currentAge": 15.27857631759069
+    }
+  },
+  "born-feb-29": {
+    "range": {
+      "minAge": 86.19884429875542,
+      "maxAge": 90.61929785253774,
+      "currentAge": 30.698151950718685
+    }
+  },
+  "over-80": {
+    "range": {
+      "minAge": 87.49772895136378,
+      "maxAge": 91.98479197451066,
+      "currentAge": 84.61190965092402
+    }
+  },
+  "base-exhausted": {
+    "issue": "base-exhausted"
+  },
+  "range-not-future": {
+    "issue": "range-not-future"
+  }
+}

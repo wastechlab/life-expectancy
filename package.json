@@ -1,0 +1,62 @@
+{
+  "name": "@wastechlab/life-expectancy",
+  "version": "1.0.0",
+  "description": "Life expectancy calculator: the method, the answer weights and a country table from UN World Population Prospects 2024, as pure TypeScript functions and open data.",
+  "keywords": [
+    "life expectancy",
+    "life expectancy calculator",
+    "calculator",
+    "longevity",
+    "health",
+    "demography",
+    "world population prospects"
+  ],
+  "license": "MIT AND CC-BY-4.0",
+  "homepage": "https://github.com/wastechlab/life-expectancy#readme",
+  "bugs": "https://github.com/wastechlab/life-expectancy/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wastechlab/life-expectancy.git"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "LICENSE-DATA",
+    "METHODOLOGY.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build-data": "tsx scripts/build-data.ts",
+    "build": "npm run build-data && tsc -p tsconfig.build.json",
+    "typecheck": "npm run build-data && tsc -p tsconfig.json",
+    "lint": "eslint .",
+    "test": "npm run build-data && vitest run",
+    "golden": "tsx scripts/golden.ts",
+    "check-ids": "tsx scripts/check-ids.ts",
+    "build-countries": "tsx scripts/build-countries.ts",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.19.2",
+    "ajv": "^8.20.0",
+    "eslint": "^10.14.0",
+    "globals": "^17.14.0",
+    "tsx": "^4.23.15",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.72.2",
+    "vitest": "^5.1.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

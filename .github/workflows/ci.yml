@@ -1,0 +1,36 @@
+name: CI
+
+# Pull requests from forks run with a read-only token and no secrets. There is deliberately no
+# pull_request_target: it would run a stranger's code with write access to the repository.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          # The id check compares the data with the target branch, so its history has to be here.
+          fetch-depth: 0
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run lint
+      # The specs include the JSON schemas of the data and the golden profiles: a change that moves an estimate
+      # fails here until golden/results.json is regenerated and committed with it.
+      - run: npm test
+      - run: npm run build
+      - name: Ids kept within the major version
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: npm run check-ids -- "origin/$BASE_REF"
